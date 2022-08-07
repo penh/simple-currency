@@ -2,8 +2,8 @@
 
 namespace Penh\SimpleCurrency\Tests;
 
-use Penh\SimpleCurrency\SimpleCurrency;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Penh\SimpleCurrency\Facades\SimpleCurrency;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Penh\SimpleCurrency\SimpleCurrencyServiceProvider;
 
@@ -16,9 +16,7 @@ class TestCase extends Orchestra
         Factory::guessFactoryNamesUsing(
             fn (string $modelName) => 'Penh\\SimpleCurrency\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
-        echo "Test formate is ";
-        $variable = new SimpleCurrency();
-        echo $variable->formate(2);
+        echo SimpleCurrency::formate(2);
         // echo $variable->echoPhrase('Hello, VendorName!');
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Facades;
+namespace Penh\SimpleCurrency\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
