@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Penh\SimpleCurrency\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class SimpleCurrencyCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'penh:simple-currency';
 
     public $description = 'My command';
 

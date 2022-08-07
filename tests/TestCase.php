@@ -1,10 +1,11 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Penh\SimpleCurrency\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Penh\SimpleCurrency\SimpleCurrency;
 use Orchestra\Testbench\TestCase as Orchestra;
-use VendorName\Skeleton\SkeletonServiceProvider;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Penh\SimpleCurrency\SimpleCurrencyServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +14,18 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'VendorName\\Skeleton\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Penh\\SimpleCurrency\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
+        echo "Test formate is ";
+        $variable = new SimpleCurrency();
+        echo $variable->formate(2);
+        // echo $variable->echoPhrase('Hello, VendorName!');
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            SkeletonServiceProvider::class,
+            SimpleCurrencyServiceProvider::class,
         ];
     }
 

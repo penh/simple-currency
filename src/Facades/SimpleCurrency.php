@@ -7,10 +7,10 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @see \VendorName\Skeleton\Skeleton
  */
-class Skeleton extends Facade
+class SimpleCurrency extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \VendorName\Skeleton\Skeleton::class;
+        return \Penh\SimpleCurrency\SimpleCurrency::class;
     }
 }
