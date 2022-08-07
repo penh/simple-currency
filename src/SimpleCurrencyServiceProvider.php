@@ -2,9 +2,9 @@
 
 namespace Penh\SimpleCurrency;
 
+use Penh\SimpleCurrency\Commands\SimpleCurrencyCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Penh\SimpleCurrency\Commands\SimpleCurrencyCommand;
 
 class SimpleCurrencyServiceProvider extends PackageServiceProvider
 {

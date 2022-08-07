@@ -2,9 +2,9 @@
 
 namespace Penh\SimpleCurrency\Tests;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Penh\SimpleCurrency\Facades\SimpleCurrency;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Penh\SimpleCurrency\SimpleCurrencyServiceProvider;
 
 class TestCase extends Orchestra

@@ -1,4 +1,5 @@
 <?php
+
 namespace Penh\SimpleCurrency\Concerns;
 
 trait HasFormate
