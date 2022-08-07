@@ -63,7 +63,7 @@
                 "Penh\\SimpleCurrency\\SimpleCurrencyServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Penh\\SimpleCurrency\\Facades\\SimpleCurrency"
+                "SimpleCurrency": "Penh\\SimpleCurrency\\Facades\\SimpleCurrency"
             }
         }
     },
